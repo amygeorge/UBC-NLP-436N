@@ -1,0 +1,40 @@
+Develop and test a Bag Of Word (BOW), and a word embedding-based classifiers for text classification.
+
+Download the file Assignment 3: Basic Text Classification (CPSC 436N).ipynb  Download Assignment 3: Basic Text Classification (CPSC 436N).ipynb. It contains a jupyter notebook file with the main code for both a BOW and an embedding-based text classifier.
+
+In this assignment, you will use sklearn (which you have already used extensively in cpsc330/cpsc340) and spacy which you briefly saw in Assignment1.
+
+We suggest creating a virtual environment for Python (e.g. virtualenv (Links to an external site.), Conda (Links to an external site.)) before installing the necessary packages. Alternatively, you can try using Colab (Links to an external site.) if your local computer is too slow.
+
+Follow the instructions in the notebook, which will contain the questions in context.
+
+We provide here a Summary of the questions with corresponding points:
+
+
+
+Q1[15pts]: Once the data has been loaded, please look at the testing set (newsgroups_test) and answer these questions:
+
+who did send the shortest message?
+Who did send the longest message?
+What are the class labels of the shortest/longest message?
+
+
+Q2[15pts]: Complete your tokenization function with Spacy (named as spacy_tokenizer). It shall cover:
+
+Lowercasing, Removing stop words, Removing punctuations, Lemmatization
+
+
+
+Q3[20pts]: Complete the code of the overall pipeline for BOW classifier by following the comments.
+
+
+
+Q4[30pts]:
+
+(a) For the previous questions, you applied the BOW vectorizer with a unigram setting, now please change the BOW vectorizer to a unigram+bigram setting and report the accuracy you get.
+
+(b) For the previous questions you used Logistic Regression as a classifier,  now please try Naive Bayes as your classifier, with BOW vectorizer including unigram and unigram+bigram. Then report the accuracies you obtain.
+
+
+
+Q5[20pts]: Please, where requested, add comments to the transform functions for Preprocessing_CMPT and SpacyWordEmb_CMPT . The comments should explain the best you can what the code is doing and why.
